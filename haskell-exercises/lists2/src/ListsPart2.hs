@@ -9,14 +9,15 @@ type Bits = [Bit]
 bitAt :: Int -> Char -> Bit
 bitAt n c = if testBit (ord c) (7-n) then T else F 
 
-charToBits :: Char -> Bits
-charToBits = error "Implement It"
+charToBits :: Char -> Bits 
+charToBits n = [bitAt index n | index <- [0,1 .. 7]]
 
 
 bits::String -> Bits
-bits = error "Implement It"
+bits [] = []
+bits (x:xs) = charToBits x ++ bits xs
 
 type Solution = [Int]
 
 queens::Int -> [Solution]
-queens error "Implement It"
+queens = error "Implement It"

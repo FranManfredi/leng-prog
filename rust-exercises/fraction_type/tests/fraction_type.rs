@@ -2,7 +2,7 @@ use fraction_type::*;
 
 #[test]
 fn test_add() {
-    let result = Fraction(1,2).add(Fraction(1,4));
+    let result = Fraction(1,2).sum(Fraction(1,4));
     assert_eq!(result, Fraction(3, 4));
 }
 
